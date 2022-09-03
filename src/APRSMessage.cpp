@@ -87,7 +87,7 @@ String APRSMessage::encode() const
 {
 	String msg;
 	msg = _source + ">" + _destination;
-	if(!_path.isEmpty())
+	if(_path.length()>0)
 	{
 		msg = msg + "," + _path;
 	}
